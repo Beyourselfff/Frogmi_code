@@ -12,10 +12,7 @@ class Store
       average_time = (solved_incidents.size / (date.parse(end_date) - date.parse(start_date)))
       max_date = solved_incidents.max
   
-      puts "The open incidents are #{open_incidents.count}"
-      puts "The solved incidents are #{solved_incidents.count}"
-      puts "The average time of solved incidents are #{average_time}"
-      puts "The maximun time of solved incidents is #{max_date}"
+      {open_incidents: open_incidents, solved_incidents: solved_incidents, average_time: average_time, max_time: max_time}
     end
 nd
   
